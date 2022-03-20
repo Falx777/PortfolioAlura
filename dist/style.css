@@ -1,0 +1,172 @@
+@keyframes movement-gradient{
+  0%{background-position: 0% 0%}
+  50%{background-position: 100% 50%}
+  100%{background-position: 0% 50%}
+}
+
+body{
+  background: linear-gradient(90deg, rgb(51, 204, 51) 0%, rgb(51, 102, 255) 100%);
+  background-size: 600% 600%;
+  animation-name: movement-gradient;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  transition: background 0.6s;   
+}
+
+img.profilePhoto{
+  height: 130px;
+  width:130px;
+  object-fit:cover;
+  border-radius: 50%;
+  box-shadow: 4px 4px 15px rgb(51, 153, 255);
+  transition: background-color 0.6s,box-shadow 0.6s;
+}
+
+h1{
+  color:white;
+  font-family:calibri;
+  text-shadow: 5px 5px 5px rgb(51, 153, 255);
+  font-size:36px;  
+  transition: text-shadow 0.6s;
+}
+
+.title{
+  margin-left: 40px;
+  color:rgb(230, 230, 230);
+  font-family:calibri;
+  text-shadow: 3px 3px 5px rgb(51, 153, 255);
+  font-size:24px;  
+}
+
+
+div.container{
+  margin:64px;
+  background-color:rgb(128, 191, 255);
+  border-radius:20px;
+  box-shadow: 5px 5px 5px rgb(77, 166, 255);
+  transition: background-color 0.6s,box-shadow 0.6s;
+}
+
+.profile{
+  margin:40px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+}
+
+.projects{
+  box-shadow: 3px 5px 5px rgb(77, 166, 255);
+  background:rgb(179, 217, 255);
+  padding-inline:64px;
+  padding-bottom:64px;
+  display:flex;
+  flex-direction:column;
+  font-family:calibri;
+  font-weight: 700;
+  color:white;
+  list-style-type:none;
+  transition: background 0.6s,box-shadow 0.6s;
+}
+
+.listTitle{
+  text-shadow: 3px 3px 5px rgb(51, 153, 255);
+  font-size: 26px;
+  transition: text-shadow 0.6s;
+}
+
+li{
+  margin-block: 10px;
+  font-size:22px;
+}
+
+.titleProject{
+  padding:7px;
+  color:white;
+  text-shadow: 5px 5px 5px rgb(89, 89, 89);
+  background:rgb(122, 122, 122);
+  margin-bottom:-5px;
+  transition: background 0.3s, text-shadow 0.6s;
+}
+
+.titleProject:hover{
+  text-shadow: 5px 5px 5px rgb(51, 51, 51);
+  background:rgb(89, 89, 89);
+  margin-bottom:-5px;
+}
+
+.btnTheme{
+  border-radius: 20px;
+  padding:15px;
+  font-size: 23px;
+  background-color: rgb(110, 182, 255);
+  color:white;
+  font-family:calibri;
+  font-weight: 1000;
+  border-style:outset;
+  border-width: thick;
+  border-color: rgb(66, 160, 255);
+  margin-left: 200px;
+  transition: background 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.6s;
+  box-shadow: 4px 4px 4px rgb(51, 153, 255)
+}
+
+.btnTheme:hover{
+  background: black;
+  border-color: rgb(51, 51, 51);
+  transition: font-size 0.3s, box-shadow 0.6s;
+  color:gray;
+}
+
+.btnTheme:active{
+  font-size: 20px;
+}
+
+.dark{
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(48, 48, 48) 100%);
+    background-size: 600% 600%;
+    animation-name: movement-gradient;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: background 0.6s;   
+}
+
+.dark .container{
+  background-color:rgb(128, 128, 128);
+  box-shadow: 5px 5px 5px rgb(89, 89, 89);
+}
+
+.dark img.profilePhoto{
+  box-shadow: 4px 4px 15px rgb(89, 89, 89);
+}
+
+.dark h1{
+  text-shadow: 5px 5px 5px rgb(89, 89, 89);
+}
+
+.dark .title{
+  text-shadow: 5px 5px 5px  rgb(89, 89, 89);
+}
+
+.dark .projects{
+  box-shadow: 3px 5px 5px rgb(89, 89, 89);
+  background:rgb(179, 179, 179);
+}
+
+.dark .listTitle{
+  text-shadow: 3px 3px 5px rgb(89, 89, 89);
+}
+
+.dark .btnTheme{
+  background: black;
+  border-color: rgb(51, 51, 51);
+  color:gray;
+  box-shadow: 4px 4px 4px rgb(89, 89, 89);
+}
+
+.dark .btnTheme:hover{
+  background-color: rgb(110, 182, 255);
+  color:white;
+  border-color: rgb(66, 160, 255);
+  box-shadow: 4px 4px 4px rgb(51, 153, 255);
+  box-shadow: 4px 4px 4px rgb(89, 89, 89);
+}
